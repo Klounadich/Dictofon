@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="close.png" />
+    <None Remove="close_black.png" />
+    <None Remove="close_but.png" />
+    <None Remove="mic.png" />
+    <None Remove="svg_close.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="close.png" />
+    <Resource Include="close_black.png" />
+    <Resource Include="close_but.png" />
+    <Resource Include="mic.png" />
+    <Resource Include="svg_close.svg" />
+  </ItemGroup>
+
+</Project>
