@@ -9,18 +9,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="25682.png" />
     <None Remove="close.png" />
     <None Remove="close_black.png" />
     <None Remove="close_but.png" />
+    <None Remove="logo.png" />
     <None Remove="mic.png" />
+    <None Remove="mic_svg.svg" />
     <None Remove="svg_close.svg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="25682.png" />
     <Resource Include="close.png" />
     <Resource Include="close_black.png" />
     <Resource Include="close_but.png" />
+    <Resource Include="logo.png" />
     <Resource Include="mic.png" />
+    <Resource Include="mic_svg.svg" />
     <Resource Include="svg_close.svg" />
   </ItemGroup>
 

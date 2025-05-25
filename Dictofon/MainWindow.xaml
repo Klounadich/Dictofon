@@ -6,20 +6,46 @@
         xmlns:local="clr-namespace:Dictofon"
         mc:Ignorable="d"
         Background="Transparent"
+        AllowsTransparency="True"
         Title="Dictofon" Height="600" Width="400"  ResizeMode="NoResize" WindowStyle="None"
         MouseLeftButtonDown="WindowMove"
         >
-    <Grid Background="#45465e">
+    <Grid Background="#2a0952" Opacity="1" >
         <Grid Width="400" Height="50" Background="#8186e6" Margin="0,0,0,550" >
+            <Image Source="/logo.png" Margin="-29,-29,311,-29" />
             <Image x:Name="Close_Button" MouseDown="Close" Source="/close_but.png" Width="40" Margin="350,0,10,0" />
-            <Grid MouseDown="Minimazed" Width="30" Height="5" Background="#321D71" Margin="315,25,55,20"></Grid>
+            <Grid MouseDown="Minimazed" Width="30" Height="5"   Background="#321D71" Margin="315,25,55,20"></Grid>
         </Grid>
         <TextBlock FontSize="30" Foreground="White" FontWeight="Bold"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,126,0,0" >Нажмите для записи</TextBlock>
         <Ellipse Width="220" Height="220" Fill="#029dd1">
 
         </Ellipse>
-        <Image Source="/mic.png" Width="140"></Image>
+        <Image Source="/25682.png" Width="140"></Image>
+
+        <Path  StrokeThickness="180" Stretch="Fill"  
+      Data="M0,0 Q10,10 20,0 T40,0 T60,0 T80,0 T100,0" Margin="-196,370,-294,-117" RenderTransformOrigin="0.5,0.5" >
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-13.429"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+            <Path.Stroke>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0" Opacity="0.5">
+                    <GradientStop Color="Red" Offset="0"/>
+                    <GradientStop Color="Blue" Offset="0.5"/>
+                    <GradientStop Color="Green" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Stroke>
+        </Path>
+
+        
+
+
     </Grid>
+    
     <Window.Clip >
         <RectangleGeometry Rect="0,0,400,600" RadiusX="15" RadiusY="15"></RectangleGeometry>
     </Window.Clip>
